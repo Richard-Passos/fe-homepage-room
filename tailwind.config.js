@@ -1,18 +1,37 @@
+const getColor = (cssVar) => `hsl(var(${cssVar}) / <alpha-value>)`;
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.jsx',
+    './src/components/**/*.jsx',
+    './src/patterns/**/*.jsx',
+    './src/views/**/*.jsx',
   ],
   theme: {
+    colors: {
+      base: {
+        DEFAULT: getColor('--base'),
+        content: getColor('--base-c'),
+      },
+      neutral: {
+        DEFAULT: getColor('--neutral'),
+        content: getColor('--neutral-c'),
+      },
+      gray: {
+        DEFAULT: getColor('--gray-p'),
+        secondary: getColor('--gray-s'),
+        tertiary: getColor('--gray-t'),
+      },
+
+      current: 'currentColor',
+      transparent: 'transparent',
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      letterSpacing: {
+        md: '.5em',
       },
     },
   },
-  plugins: [],
-}
+  plugins: [require('@tushargugnani/tailwind-group-peer-checked')],
+};

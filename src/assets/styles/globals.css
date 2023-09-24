@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply [--max-w:theme(screens.2xl)] [--page-x-2:calc(var(--page-x)*2)] [--page-x:clamp(theme(spacing.6),3vw,theme(spacing.12))];
+
+    --base: 0 0% 100%;
+    --base-c: 0 0% 0%;
+
+    --neutral: 0 0% 0%;
+    --neutral-c: 0 0% 100%;
+
+    --gray-p: 0 0% 0%;
+    --gray-s: 0 0% 27%;
+    --gray-t: 0 0% 63%;
+  }
+
+  *:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6, p, span, button) {
+    @apply w-fit;
+  }
+}
