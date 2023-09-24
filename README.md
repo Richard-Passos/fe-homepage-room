@@ -4,8 +4,8 @@
 Room homepage.
 
 ## :wrench: Technologies used
-* NextJs
-* TailwinddCSS
+* NextJS
+* TailwindCSS
 * Jest
 * JavaScript
 * CSS
