@@ -1,7 +1,7 @@
-<h1 align="center">:file_cabinet: Title</h1>
+<h1 align="center">:file_cabinet: Room</h1>
 
 ## :memo: Description
-Description of the project.
+Room homepage.
 
 ## :wrench: Technologies used
 * NextJs
