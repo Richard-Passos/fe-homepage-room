@@ -1,21 +1,30 @@
 <h1 align="center">:file_cabinet: Room</h1>
 
+<br>
+
 ## :memo: Description
-Room homepage.
+Room homepage. Just to practice some patterns. 
+
+Design by FrontEnd Mentor: https://www.frontendmentor.io
+
+<br>
 
 ## :wrench: Technologies used
 * NextJS
-* TailwindCSS
 * Jest
+* TailwindCSS
 * JavaScript
 * CSS
 * HTML
 
-## :rocket: Running the project
-To run the repository, it is recommended to access:
+<br>
+
+## :rocket: Run project
 ```
 https://fe-homepage-room.vercel.app
 ```
+
+<br>
 
 ## :handshake: Team
 <table>
@@ -31,5 +40,7 @@ https://fe-homepage-room.vercel.app
   </tr>
 </table>
 
-## :dart: Project status
+<br>
+
+## :dart: Status
 Finished
