@@ -10,7 +10,7 @@ const Root = ({ asChild, variant, className, ...props }) => {
   return (
     <Tag
       className={cn(
-        'items-cente flex h-12 min-w-[theme(spacing.12)] cursor-pointer justify-center gap-2 font-bold uppercase tracking-md',
+        'items-center flex h-12 min-w-[theme(spacing.12)] cursor-pointer justify-center gap-2 font-bold uppercase tracking-md',
         variantClassName,
         className,
       )}
